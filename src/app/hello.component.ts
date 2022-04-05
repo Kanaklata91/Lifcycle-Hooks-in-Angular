@@ -16,6 +16,9 @@ export class HelloComponent implements OnChanges, OnInit, DoCheck {
   @Input() val: string;
 
   ngOnInit() {
+    setTimeout(() => {
+      console.log('Test');
+    }, 2000);
     console.log('ngOInit called.');
   }
 
